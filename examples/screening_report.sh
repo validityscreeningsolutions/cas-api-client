@@ -5,7 +5,7 @@
 # Requires jq to parse JSON responses:
 #    https://github.com/stedolan/jq
 
-BASE_URL=https://validity-ejobapp-uat.herokuapp.com/api/v1
+BASE_URL=https://sandbox.validityidsource.com/api/v1
 SCREENING_ID="218"
 
 content=$(
