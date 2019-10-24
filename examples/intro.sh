@@ -49,6 +49,7 @@ content=$(
     "${URL}/positions"
   )
 
+# Pretty print the JSON.  The -M means monochrome.
 echo $content | jq -M
 
 
