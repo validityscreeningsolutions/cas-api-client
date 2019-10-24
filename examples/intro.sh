@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Examples of searching for Applicants and Screenings
+# Log in to receive a token, then fetch a list of the available Positions.
 
 # Requires jq to parse JSON:
 #    https://github.com/stedolan/jq
