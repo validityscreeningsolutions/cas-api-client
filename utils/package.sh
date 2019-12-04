@@ -14,5 +14,10 @@ fi
 NAME=$1
 SECRETS_JSON=$2
 
-zip -j build/$NAME.zip examples/intro.sh $SECRETS_JSON
+#zip -j build/$NAME.zip examples/intro.sh $SECRETS_JSON
+zip -j build/$NAME.zip \
+  examples/intro.sh  \
+  examples/screening.create.sh \
+  examples/data/screening.create.json \
+  $SECRETS_JSON
 

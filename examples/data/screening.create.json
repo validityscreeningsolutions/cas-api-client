@@ -1,0 +1,65 @@
+{
+  "screening_order": {
+    "first_name": "Giuseppe",
+    "middle_name": "Mario",
+    "last_name": "Kurgano",
+    "address1": "123 Anystreet",
+    "city": "Austin",
+    "state_code": "TX",
+    "zip": "78753",
+    "county": "Travis",
+    "country": "US",
+    "email": "joe@mars.com",
+    "phone": "512-654-3444",
+    "account_id": 5,
+    "position_id": "34",
+    "ssn": "111-11-1111",
+    "dob": "01/01/1968",
+    "external_id": "EXT1234",
+    "service_details": {
+      "education_records": [
+        {
+          "school_name": "West Texas Small University",
+          "city": "Amarillo",
+          "state": "TX",
+          "name_while_attending": "Giuseppe Kurgano",
+          "start_date": "09/22/2002",
+          "end_date": "05/27/2006",
+          "degree": "B.S.",
+          "major": "Archeology"
+        },
+        {
+          "school_name": "East Texas Big University",
+          "city": "Beaumont",
+          "state": "TX",
+          "name_while_attending": "Joe Kurgan",
+          "start_date": "09/20/2007",
+          "end_date": "05/22/2009",
+          "degree": "Masters",
+          "major": "Anthropology"
+        }
+      ],
+      "employment_records": [
+        {
+          "employer_name": "Carleton Excavation",
+          "city": "Austin",
+          "state": "TX",
+          "temporary": false,
+          "name_while_employed": "Giuseppe Kurgano",
+          "start_date": "01/01/2010",
+          "end_date": "08/13/2013"
+        },
+        {
+          "employer_name": "Hissarlik Preservation Council",
+          "city": "Austin",
+          "state": "TX",
+          "temporary": false,
+          "name_while_employed": "Giuseppe Kurgano",
+          "start_date": "08/30/2014",
+          "end_date": "02/14/2017"
+        }
+      ]
+    }
+  }
+}
+
