@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Log in to receive a token, then create a screening using a JSON file for the payload.
+# Log in to receive a token, then invite an applicant using a JSON file for the payload.
 
 # Requires jq to parse JSON:
 #    https://github.com/stedolan/jq
@@ -9,7 +9,7 @@ set -e
 
 USAGE="$(basename $0) path/to/secrets.json path/to/payload.json"
 
-if [ $# -ne 3 ]
+if [ $# -ne 2 ]
   then
     echo "usage:"
     echo $USAGE
@@ -38,7 +38,7 @@ content=$(
 # Extract the token from the JSON body.
 token=$(echo $content | jq -r '.token')
 
-# Create a Screening.
+# Invite an applicant
 content=$(
   curl \
     -s \
@@ -47,7 +47,7 @@ content=$(
     -H "Authorization: ${token}" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    "${URL}/screening/create"
+    "${URL}/screening/initiate"
   )
 
 # Pretty print the JSON.  The -M means monochrome.

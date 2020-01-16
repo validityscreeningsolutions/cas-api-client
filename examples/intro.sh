@@ -4,24 +4,22 @@
 
 # Requires jq to parse JSON:
 #    https://github.com/stedolan/jq
-#
-# The secret.json file should contain an object with attributes "username" and "password".
 
 set -e
 
-USAGE="$(basename $0) api_url path/to/secret.json"
+USAGE="$(basename $0) path/to/secrets.json"
 
-if [ $# -ne 2 ]
+if [ $# -ne 1 ]
   then
     echo "usage:"
     echo $USAGE
     exit 1
 fi
 
-URL=$1
-SECRETS_JSON=$2
+SECRETS_JSON=$1
 
 secrets=$(cat $SECRETS_JSON)
+URL=$(echo $secrets | jq -r '.url')
 USERNAME=$(echo $secrets | jq -r '.username')
 PASSWORD=$(echo $secrets | jq -r '.password')
 

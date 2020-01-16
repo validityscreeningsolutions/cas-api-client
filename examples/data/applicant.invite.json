@@ -1,0 +1,17 @@
+{
+  "screening_order": {
+    "account_id": "1",
+    "position_id": "9",
+    "first_name": "Giuseppe",
+    "middle_name": "Mario",
+    "last_name": "Kurgano",
+    "address1": "123 Anystreet",
+    "city": "Austin",
+    "state_code": "TX",
+    "zip": "78753",
+    "county": "Travis",
+    "country": "US",
+    "email": "joe@mars.com",
+    "phone": "512-654-3444"
+  }
+}
